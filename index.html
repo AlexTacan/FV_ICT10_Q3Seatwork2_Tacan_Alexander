@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Intramurals Team Checker</title>
+</head>
+
+<body>
+<center>
+    <div class="container">
+        <h5>Have you done the online registration?</h5>
+        <div class="mb-3">
+            <input type="radio" id="registered_yes" name="registered" value="Yes">
+            <label for="registered_yes">Yes</label>
+
+            <input type="radio" id="registered_no" name="registered" value="No" class="ms-3">
+            <label for="registered_no">No</label>
+        </div>
+
+        <h5>Do you have a medical clearance from the clinic?</h5>
+        <div class="mb-4">
+            <input type="radio" id="medical_yes" name="medical" value="Yes">
+            <label for="medical_yes">Yes</label>
+
+            <input type="radio" id="medical_no" name="medical" value="No" class="ms-3">
+            <label for="medical_no">No</label>
+        </div>
+
+    <p>What's your Grade & Section?</p>
+    <select id="grade_level_dropdown" style="width: 400px;">
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <br><br>
+    <select id="section_dropdown" style="width: 400px;">
+        <option value="Ruby">Ruby</option>
+        <option value="Sapphire">Sapphire</option>
+        <option value="Emerald">Emerald</option>
+        <option value="Topaz">Topaz</option>
+        <option value="Jade">Jade</option>
+    </select>
+    <br><br>
+    <button py-click="show_team">Sign Up</button>
+ 
+    <br>
+    <div id="team_message"></div>
+    </div>
+    <script type="py" src="main.py"></script>
+
+</body>
+
+</html>
